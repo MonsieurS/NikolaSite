@@ -1,6 +1,6 @@
 .navigation {
-	display: block;
-	position: absolute;
+	display: none;
+	position: fixed;
 	bottom: 0;
 	width: 260px;
 	height: 100%;
@@ -156,7 +156,7 @@
 
 	.tablet-header {
 		display: table;
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 90px;
 		height: 100%;
