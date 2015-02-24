@@ -1,6 +1,6 @@
 .navigation {
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 260px;
 	height: 100%;
@@ -24,30 +24,30 @@
 .navigation-links ul li {
 	width: 100%;
 	height: auto;
-	padding: 10px 15px;
 	font-size: 1.3em;
 	list-style: none;
-	background-color: transparent;
-	tansition: background-color 200ms ease;
-}
-
-
-.navigation-links ul li:hover {
-	background-color: #b0e0e6;
-	color: #ffffff;
 }
 
 .navigation-links ul a {
+	display: block;
 	color: #535353;
 	font-style: none;
+	padding: 10px 15px;
 	text-decoration: none;
+	transition: background-color 0.1s ease, color 0.1s ease;
+
+}
+
+.navigation-links ul a:hover {
+	background-color: #b0e0e6;
+	color: #ffffff;
 }
 
 .navigation-links ul a:hover {opacity: 1;}
 
 .icon {
-	margin-top: 2px;
-	float: right;
+	margin-right: 20px;
+	width: 20px;
 }
 .additional-info {
 	width: 100%;
