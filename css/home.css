@@ -83,6 +83,7 @@
 	list-style: none;
 	text-align: center;
 	padding: 20px;
+	margin: 50px 0;
 }
 
 .skills-list figure, .my-info figure {
@@ -95,9 +96,14 @@
 	height: 100px;
 }
 
+.text-info {
+}
+
 .my-info {
 	width: 100%;
 	height: auto;
+	padding: 0 35px; 
+	
 }
 
 .my-info ul {
