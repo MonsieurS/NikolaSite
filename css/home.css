@@ -49,7 +49,7 @@
 }
 
 
-.billboard-text a {
+.billboard-text a, .billboard-text a > i {
 	font-size: 16px;
 	color: rgba(210,210,210,1);
 	transition: color 0.1s ease;
@@ -60,11 +60,11 @@
 	margin-right: 0;
 }
 
-.billboard-text a:hover {
+.billboard-text a:hover, .billboard-text a:hover > i {
 	color: white;
 }
 
-.billboard-text a:active {
+.billboard-text a:active, .billboard-text a:active > i {
 	color: rgba(210,210,210,0.8);
 }
 
@@ -78,7 +78,7 @@
 	height: auto;
 }
 
-.skills-list ul li, .my-info ul li {
+.skills-list ul li{
 	width: 100%;
 	display: inline-block;
 	list-style: none;
@@ -113,6 +113,21 @@
 }
 .my-info ul li {
 	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+
+.my-info ul li img {
+	width: 100%;
+	padding: 20px;
+}
+
+.my-info ul li h2 {
+	margin-top: 20px;
+}
+
+.my-info p {
+	margin-top: 45px;
 }
 
 @media all and (min-width: 765px) {
@@ -123,6 +138,11 @@
 
 	.my-info {
 		width: 50%;
+		float: left;
+	}
+
+	.my-info ul li {
+		width: 33.33%;
 		float: left;
 	}
 }

@@ -1,16 +1,24 @@
 .navigation {
-	display: block;
 	position: fixed;
 	bottom: 0;
 	width: 260px;
 	height: 100%;
 	border-right: 1px solid #ddd;
-	z-index: -999;
+	z-index: 9;
 	background-color: white;
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	transition: -webkit-transform 0.15s ease;
+	transition: transform 0.15s ease;
 /*	background-image: url('../images/navigation-bg-home3.jpg');
 	background-position: center;
 	background-size: cover;
 }*/
+}
+
+.transitionNavigation {
+	-webkit-transform: translateX(0%);
+	        transform: translateX(0%);
 }
 .navigation-links {
 	width: 100%;
@@ -54,6 +62,7 @@
 .icon {
 	margin-right: 20px;
 	width: 20px;
+	color: #666;
 }
 .additional-info {
 	width: 100%;
@@ -79,18 +88,17 @@
 	width: auto;
 	height: auto;
 	/*color: #191919;*/
-	color: #444;
-	opacity: 0.7;
+	color: #666;
 	margin-right: 10px;
 	transition: opacity 0.1s ease;
 }
 
 .social-media ul a:hover {
-	opacity: 1;
+	color: #444;
 }
 
 .social-media ul a:active {
-	opacity: 0.9;
+	color: #555;
 }
 
 .social-media ul a:last-child {	margin-right: 0;}
@@ -122,8 +130,9 @@
 	position: fixed;
 	width: 100%;
 	height: 50px;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #ddd;
 	background-color: #ffffff;
+	z-index: 999;
 }
 
 .tablet-header {display: none;}
@@ -133,15 +142,17 @@
 	height: 100%;
 	float: left;
 	text-align: center;
+	color: #666;
 }
 
+
 .fa-ellipsis-h {		/** Menu icon **/
-	color: #191919;
 	margin-top: 2px;
 	transition: color 100ms ease;
 }
 
-.fa-ellipsis-h:hover {color: #535353;}
+.open-menu-icon:hover {color: #444;}
+.open-menu-icon:active {color: #444;}
 
 .logo {
 	width: 60%;
@@ -164,7 +175,7 @@
 /** Transitions **/
 
 
-@media all  and (min-width:765px) {
+@media all  and (min-width:785px) {
 	.mobile-header {display: none;}
 
 	.logo {display: none;}
@@ -173,7 +184,7 @@
 
 	.tablet-header {
 		display: table;
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 90px;
 		height: 100%;
@@ -210,6 +221,10 @@
 @media all  and (min-width:1100px) {
 	.tablet-header {display: none;}
 
-	.navigation {display: block;}
+	.navigation {
+		display: block;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
 
 }
