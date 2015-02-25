@@ -6,11 +6,12 @@
 	height: 100%;
 	/*border-right: 1px solid grey;*/
 	z-index: -999;
-	background-image: url('../images/navigation-bg-home3.jpg');
+	background-color: #34495e;
+/*	background-image: url('../images/navigation-bg-home3.jpg');
 	background-position: center;
 	background-size: cover;
+}*/
 }
-
 .navigation-links {
 	width: 100%;
 	height: 80%;
@@ -60,7 +61,7 @@
 }
 
 .social-media {
-	width: 100%;
+	width: 100%;file:///X:/webDevel/NikolaSite/index.html
 	height: 60%;
 	display: table;
 }
@@ -86,6 +87,10 @@
 
 .social-media ul a:hover {
 	opacity: 1;
+}
+
+.social-media ul a:active {
+	opacity: 0.9;file:///X:/webDevel/NikolaSite/index.html
 }
 
 .social-media ul a:last-child {	margin-right: 0;}

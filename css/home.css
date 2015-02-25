@@ -12,8 +12,9 @@
 	height: 50em;
 	background-image: url('../billboard.jpg');
 	background-repeat: no-repeat;
-	background-position: center;	
-	background-size: cover;
+	background-position: 130px -300px;	
+	background-size: ;
+	background-attachment: fixed;
 	position: relative;
 
 }
@@ -103,7 +104,7 @@
 	width: 100%;
 	height: auto;
 	padding: 0 35px; 
-	
+
 }
 
 .my-info ul {
