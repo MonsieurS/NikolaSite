@@ -115,15 +115,17 @@
 	list-style: none;
 	width: 100%;
 	text-align: center;
+	padding: 0 25px;
+
 }
 
 .my-info ul li img {
 	width: 100%;
-	padding: 20px;
 }
 
 .my-info ul li h2 {
 	margin-top: 20px;
+
 }
 
 .my-info p {
