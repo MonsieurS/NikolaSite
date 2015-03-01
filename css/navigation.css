@@ -206,9 +206,37 @@
 		height: 20%;
 		float: none;
 		text-align: center;
-		line-height: 45px;
 		font-variant: small-caps;
 		font-size: 3em;
+		padding: 20px;
+	}
+
+	.logo2 figure{
+		font-size: 0em;
+		line-height: normal;
+	}
+
+	.logo2 figure img{
+		width: 60%;
+		border-radius: 9999px;
+		border: 4px solid rgb(238, 238, 238);
+	}
+
+	.logo2 figure h1 {
+		text-transform: uppercase;
+		font-size: 22px;
+		margin: 10px 0;
+		padding: 0;
+		border-bottom: none;
+	}
+
+	.logo2 figure span {
+		font-size: 12px;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: 'Bitter';
+		word-spacing: 2px;
+
 	}
 
 	.navigation-links {
