@@ -40,11 +40,12 @@
 }
 
 .billboard-text h2 {
-	font-size: 65px;
+	font-size: 50px;
 }
 
 .billboard-text	p {
-	font-size: 25px;
+	font-size: 30px;
+	font-family: 'Bitter';
 	margin-bottom: 20px;
 }
 
